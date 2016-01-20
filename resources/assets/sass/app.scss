@@ -1,4 +1,5 @@
 @import 'foundation';
+@include foundation-flex-grid;
 @include foundation-everything;
 
 $background-color: #FDFDFD;
@@ -82,10 +83,14 @@ html, body {
 
 .items {
   margin-top: 10px;
+
+  .large-3 {
+    padding: 0px;
+  }
 }
 
 .test-item {
   background-color: red;
-  width: 250px;
-  height: 250px;
+  width: 270px;
+  height: 270px;
 }
