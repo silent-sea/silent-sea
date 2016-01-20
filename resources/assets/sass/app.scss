@@ -1,2 +1,25 @@
 @import 'foundation';
 @include foundation-everything;
+
+$background-color: #FDFDFD;
+$font: 'Lato', sans-serif;;
+
+$test: red;
+
+.test {
+  background-color: $test;
+}
+
+html, body {
+  background-color: $background-color;
+  font-family: $font;
+}
+
+.tc {
+  text-align: center;
+}
+
+.topnav {
+  font-weight: bold;
+}
+

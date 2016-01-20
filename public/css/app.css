@@ -3171,4 +3171,17 @@ table.hover tr:nth-of-type(even):hover {
 .top-bar-right {
   float: right; }
 
+.test {
+  background-color: red; }
+
+html, body {
+  background-color: #FDFDFD;
+  font-family: "Lato", sans-serif; }
+
+.tc {
+  text-align: center; }
+
+.topnav {
+  font-weight: bold; }
+
 /*# sourceMappingURL=app.css.map */
