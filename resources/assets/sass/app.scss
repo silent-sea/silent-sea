@@ -15,11 +15,43 @@ html, body {
   font-family: $font;
 }
 
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
 .tc {
   text-align: center;
 }
 
 .topnav {
   font-weight: bold;
+  div a {
+    color: black;
+  }
+
+  div a:hover {
+    padding: 5px 10px 5px 10px;
+    border: 3px solid black;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+  }
+}
+
+.hero-image {
+  background-color: lightgrey;
+  height: 300px;
+  margin-top: 50px;
+  margin-bottom: 200px;
+}
+
+.footer {
+  border-top: 3px solid black;
+  padding-top: 10px;
+  font-size: 9.5pt;
 }
 
