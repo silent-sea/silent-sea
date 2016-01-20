@@ -60,10 +60,10 @@ html, body {
   background-color: lightgrey;
   height: 300px;
   margin-top: 50px;
-  margin-bottom: 200px;
 }
 
 .footer {
+  margin-top: 30px;
   border-top: 3px solid $main-black;
   padding-top: 10px;
   font-size: 9.5pt;
@@ -74,4 +74,18 @@ html, body {
   border-radius: 50%;
   width: 200px;
   height: 200px;
+}
+
+.latest-items {
+  margin-top: 30px;
+}
+
+.items {
+  margin-top: 10px;
+}
+
+.test-item {
+  background-color: red;
+  width: 250px;
+  height: 250px;
 }
