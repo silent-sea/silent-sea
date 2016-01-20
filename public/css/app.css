@@ -3187,8 +3187,16 @@ html, body {
 .tc {
   text-align: center; }
 
+.logo {
+  margin-top: 50px; }
+  .logo p {
+    font-size: 50pt;
+    text-align: center;
+    margin-top: 35px; }
+
 .topnav {
-  font-weight: bold; }
+  font-weight: bold;
+  margin-top: 50px; }
   .topnav div a {
     color: #151414; }
   .topnav div a:hover {
@@ -3206,5 +3214,11 @@ html, body {
   border-top: 3px solid #151414;
   padding-top: 10px;
   font-size: 9.5pt; }
+
+.circle_logo {
+  background-color: red;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px; }
 
 /*# sourceMappingURL=app.css.map */

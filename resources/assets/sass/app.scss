@@ -4,6 +4,7 @@
 $background-color: #FDFDFD;
 $font: 'Lato', sans-serif;;
 $main-black: #151414;
+$logo-color: red;
 
 $test: red;
 
@@ -28,8 +29,20 @@ html, body {
   text-align: center;
 }
 
+.logo {
+  margin-top: 50px;
+
+  p {
+    font-size: 50pt;
+    text-align: center;
+    margin-top: 35px;
+  }
+}
+
 .topnav {
   font-weight: bold;
+  margin-top: 50px;
+
   div a {
     color: $main-black;
   }
@@ -56,3 +69,9 @@ html, body {
   font-size: 9.5pt;
 }
 
+.circle_logo {
+  background-color: $logo-color;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}

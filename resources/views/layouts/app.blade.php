@@ -7,7 +7,12 @@
 </head>
 
 <body>
-    <div class="container" style="margin-top: 150px;">
+    <div class="container">
+        <div class="row logo">
+            <div class="large-2 columns"><div class="circle_logo"></div></div>
+            <div class="large-10 columns"><p>Frog and Veil</p></div>
+        </div>
+
         <div class="row topnav">
             <div class="small-2 large-2 columns tc"><a href="#">HOME</a></div>
             <div class="small-2 large-2 columns tc"><a href="#">COLLECTIONS</a></div>
