@@ -3,6 +3,7 @@
 
 $background-color: #FDFDFD;
 $font: 'Lato', sans-serif;;
+$main-black: #151414;
 
 $test: red;
 
@@ -30,12 +31,12 @@ html, body {
 .topnav {
   font-weight: bold;
   div a {
-    color: black;
+    color: $main-black;
   }
 
   div a:hover {
     padding: 5px 10px 5px 10px;
-    border: 3px solid black;
+    border: 3px solid $main-black;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
@@ -50,7 +51,7 @@ html, body {
 }
 
 .footer {
-  border-top: 3px solid black;
+  border-top: 3px solid $main-black;
   padding-top: 10px;
   font-size: 9.5pt;
 }
