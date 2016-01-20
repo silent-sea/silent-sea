@@ -12,5 +12,10 @@ var elixir = require('laravel-elixir');
  */
 
 elixir(function(mix) {
-    mix.sass('app.scss');
+    mix.sass(
+        'app.scss',
+        'public/css/app.css',
+        { includePaths:
+            ['bower_components/foundation-sites/scss/']
+        });
 });
