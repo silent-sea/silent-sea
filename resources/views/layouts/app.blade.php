@@ -28,9 +28,11 @@
     </div>
 
     <div class="container">
-        <div class="row footer">
-            <div class="left">Copyright &copy; Frog and Veil 2016</div>
-            <div class="right">Contact</div>
+        <div class="row">
+            <div class="columns footer">
+                <div class="left">Copyright &copy; Frog and Veil 2016</div>
+                <div class="right">Contact</div>
+            </div>
         </div>
     </div>
 </body>

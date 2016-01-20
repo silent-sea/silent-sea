@@ -3720,12 +3720,14 @@ html, body {
     border-radius: 3px; }
 
 .hero-image {
-  background-color: lightgrey;
-  height: 300px;
   margin-top: 50px; }
+  .hero-image .h-image {
+    background-color: lightgrey;
+    height: 300px; }
 
 .footer {
   margin-top: 30px;
+  margin-bottom: 20px;
   border-top: 3px solid #151414;
   padding-top: 10px;
   font-size: 9.5pt; }
