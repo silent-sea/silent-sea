@@ -4,7 +4,8 @@
 
 $background-color: #FDFDFD;
 $font: 'Lato', sans-serif;;
-$main-black: #151414;
+$main-black: #3b3b58;
+$main-orange: #ff4e5c;
 $logo-color: red;
 
 $test: red;
@@ -70,11 +71,11 @@ nav {
   }
 
   a:hover {
-    color: $main-black;
+    color: $main-orange;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
-    border: 3px solid $main-black;
+    border: 3px solid $main-orange;
     padding: 5px 10px 5px 10px;
     animation: shake .5s ease-in-out;
   }
@@ -126,7 +127,7 @@ nav {
 }
 
 .box i:hover {
-  color: #ff4e5c;
+  color: $main-orange;
 }
 
 .box:first-child {
@@ -153,7 +154,7 @@ nav {
 }
 
 .box__more {
-  color: #ff4e5c;
+  color: $main-orange;
 }
 
 .box__content {
@@ -163,26 +164,26 @@ nav {
 }
 
 .box__content:hover {
-  color: #3b3b58;
+  color: $main-black;
 }
 
 .box__content:hover .box__more {
-  color: #ff3545;
+  color: $main-orange;
   padding: 5px 10px 5px 10px;
-  border: 3px solid #ff3545;
+  border: 3px solid $main-orange;
   border-radius: 3px;
   animation: shake .5s ease-in-out;
 }
 
 .section {
-  width: 500px;
+  width: 800px;
   margin-bottom: 50px;
 }
 
 
 .section__title {
   font-size: 24px;
-  color: #3b3b58;
+  color: $main-black;
   font-family: "Montserrat", sans-serif;
   margin: 0 auto 15px auto;
   font-weight: bold;

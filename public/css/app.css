@@ -3708,13 +3708,13 @@ html, body {
     font: 700 90px/1 "Dancing Script", cursive;
     display: block;
     margin: auto;
-    color: #151414; }
+    color: #3b3b58; }
 
 .footer {
   font-family: "Montserrat", sans-serif;
   margin-top: 50px;
   margin-bottom: 20px;
-  border-top: 3px solid #151414;
+  border-top: 3px solid #3b3b58;
   padding-top: 10px;
   font-size: 8pt; }
 
@@ -3731,16 +3731,16 @@ nav {
     justify-content: space-between;
     padding: 0;
     margin: 0;
-    color: #151414; }
+    color: #3b3b58; }
   nav a {
-    color: #151414;
+    color: #3b3b58;
     font-family: "Montserrat", sans-serif;
     border: 3px solid white;
     padding: 5px 10px 5px 10px; }
   nav a:hover {
-    color: #151414;
+    color: #ff4e5c;
     border-radius: 3px;
-    border: 3px solid #151414;
+    border: 3px solid #ff4e5c;
     padding: 5px 10px 5px 10px;
     -webkit-animation: shake .5s ease-in-out;
     animation: shake .5s ease-in-out; }
@@ -3834,15 +3834,15 @@ nav {
   color: #3b3b58; }
 
 .box__content:hover .box__more {
-  color: #ff3545;
+  color: #ff4e5c;
   padding: 5px 10px 5px 10px;
-  border: 3px solid #ff3545;
+  border: 3px solid #ff4e5c;
   border-radius: 3px;
   -webkit-animation: shake .5s ease-in-out;
   animation: shake .5s ease-in-out; }
 
 .section {
-  width: 500px;
+  width: 800px;
   margin-bottom: 50px; }
 
 .section__title {
