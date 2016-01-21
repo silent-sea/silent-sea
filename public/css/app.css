@@ -3785,52 +3785,6 @@ nav {
     -webkit-transform: translateX(0);
     transform: translateX(0); } }
 
-.box-grid {
-  width: 1200px;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-content: stretch;
-  -ms-flex-line-pack: stretch;
-  align-content: stretch;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center; }
-  .box-grid .box {
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-order: 0;
-    -ms-flex-order: 0;
-    order: 0;
-    -webkit-flex: 0 1 auto;
-    -ms-flex: 0 1 auto;
-    flex: 0 1 auto;
-    -webkit-align-self: auto;
-    -ms-flex-item-align: auto;
-    align-self: auto;
-    padding: 20px;
-    border-radius: 5px;
-    background: #f4f4f4; }
-    .box-grid .box h3 {
-      display: block; }
-    .box-grid .box p {
-      color: #454545;
-      text-align: center; }
-  .box-grid .box:first-child {
-    margin-right: 20px; }
-  .box-grid .box:last-child {
-    margin-left: 20px; }
-
 #owl {
   margin-bottom: 50px; }
 
@@ -3838,5 +3792,69 @@ nav {
   display: block;
   width: 1200px;
   height: 400px; }
+
+.box {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+  background: #f9f9f9; }
+
+.box i:hover {
+  color: #ff4e5c; }
+
+.box:first-child {
+  margin-right: 50px; }
+
+.box:last-child {
+  margin-left: 50px; }
+
+.box__grid {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.box__title {
+  font-family: "Montserrat", sans-serif; }
+
+.box__more {
+  color: #ff4e5c; }
+
+.box__content {
+  color: #454545;
+  text-align: center;
+  padding: 20px; }
+
+.box__content:hover {
+  color: #3b3b58; }
+
+.box__content:hover .box__more {
+  color: #ff3545;
+  padding: 5px 10px 5px 10px;
+  border: 3px solid #ff3545;
+  border-radius: 3px;
+  -webkit-animation: shake .5s ease-in-out;
+  animation: shake .5s ease-in-out; }
+
+.section {
+  width: 500px;
+  margin-bottom: 50px; }
+
+.section__title {
+  font-size: 24px;
+  color: #3b3b58;
+  font-family: "Montserrat", sans-serif;
+  margin: 0 auto 15px auto;
+  font-weight: bold; }
+
+.section__intro {
+  display: block;
+  text-align: center;
+  margin: 0 5% 0; }
 
 /*# sourceMappingURL=app.css.map */
