@@ -3739,7 +3739,9 @@ nav {
     color: #151414; }
   nav a {
     color: #151414;
-    font-family: "Montserrat", sans-serif; }
+    font-family: "Montserrat", sans-serif;
+    border: 3px solid white;
+    padding: 5px 10px 5px 10px; }
   nav a:hover {
     color: #151414;
     border-radius: 3px;

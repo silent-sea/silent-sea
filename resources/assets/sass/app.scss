@@ -71,6 +71,8 @@ nav {
   a {
     color: $main-black;
     font-family: "Montserrat", sans-serif;
+    border: 3px solid white;
+    padding: 5px 10px 5px 10px;
   }
 
   a:hover {
