@@ -40,19 +40,13 @@ html, body {
   }
 }
 
-.hero {
-  background: url('http://www.95wowgold.com/images/exceptional-shine-wedding-invitations-5-wedding-invitation-1200-x-900.jpg') 50%;
-  width: 1200px;
-  height: 400px;
-  margin-bottom: 50px;
-}
-
 .footer {
-  margin-top: 30px;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 50px;
   margin-bottom: 20px;
   border-top: 3px solid $main-black;
   padding-top: 10px;
-  font-size: 9.5pt;
+  font-size: 8pt;
 }
 
 nav {
@@ -82,6 +76,33 @@ nav {
     border-radius: 3px;
     border: 3px solid $main-black;
     padding: 5px 10px 5px 10px;
+    animation: shake .5s ease-in-out;
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+
+  20% {
+    transform: translateX(-10px);
+  }
+
+  40% {
+    transform: translateX(10px);
+  }
+
+  60% {
+    transform: translateX(-10px);
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    transform: translateX(0);
   }
 }
 
@@ -100,14 +121,12 @@ nav {
   -ms-flex-pack: center;
   justify-content: center;
   -webkit-align-content: stretch;
-  -ms-flex-line-pack: stretch;
   align-content: stretch;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
 
   .box {
-    background: lightgrey;
     display: inline-flex;
     -webkit-order: 0;
     -ms-flex-order: 0;
@@ -116,16 +135,18 @@ nav {
     -ms-flex: 0 1 auto;
     flex: 0 1 auto;
     -webkit-align-self: auto;
-    -ms-flex-item-align: auto;
     align-self: auto;
     padding: 20px;
     border-radius: 5px;
+    background: #f4f4f4;
 
     h3 {
+      display: block;
     }
 
     p {
-      display: block;
+      color: #454545;
+      text-align: center;
     }
   }
 
@@ -136,4 +157,14 @@ nav {
   .box:last-child {
     margin-left: 20px;
   }
+}
+
+#owl {
+  margin-bottom: 50px;
+}
+
+#owl .item img{
+  display: block;
+  width: 1200px;
+  height: 400px;
 }

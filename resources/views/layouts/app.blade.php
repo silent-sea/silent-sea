@@ -9,7 +9,13 @@
 
     <title>Frog and Veil</title>
 
+    {!! Html::style('css/owl.carousel.css') !!}
+    {!! Html::style('css/owl.theme.css') !!}
     {!! Html::style('css/app.css') !!}
+
+    {!! Html::script('js/jquery-1.9.1.min.js') !!}
+    {!! Html::script('js/owl.carousel.js') !!}
+
 </head>
 
 <body>
@@ -36,12 +42,26 @@
 
     <div class="container">
         <div class="row footer">
-            <div class="columns">
                 <div class="left">Copyright &copy; Frog and Veil 2016</div>
-                <div class="right">Contact</div>
-            </div>
         </div>
     </div>
+
+    <script>
+        $(document).ready(function() {
+
+            $("#owl").owlCarousel({
+
+                navigation : false,
+                slideSpeed : 200,
+                paginationSpeed : 400,
+                singleItem:true,
+                autoPlay: true,
+                pagination: false
+
+            });
+
+        });
+    </script>
 </body>
 
 </html>
