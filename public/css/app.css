@@ -3750,7 +3750,6 @@ nav {
 
 .box-grid {
   width: 1200px;
-  background: blue;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
@@ -3770,7 +3769,7 @@ nav {
   -ms-flex-align: center;
   align-items: center; }
   .box-grid .box {
-    background: red;
+    background: lightgrey;
     display: -webkit-inline-flex;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -3784,8 +3783,12 @@ nav {
     -webkit-align-self: auto;
     align-self: auto;
     padding: 20px;
-    margin: 20px; }
-    .box-grid .box h3 {
+    border-radius: 5px; }
+    .box-grid .box p {
       display: block; }
+  .box-grid .box:first-child {
+    margin-right: 20px; }
+  .box-grid .box:last-child {
+    margin-left: 20px; }
 
 /*# sourceMappingURL=app.css.map */

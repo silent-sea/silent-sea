@@ -87,7 +87,6 @@ nav {
 
 .box-grid {
   width: 1200px;
-  background: blue;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
@@ -108,7 +107,7 @@ nav {
   align-items: center;
 
   .box {
-    background: red;
+    background: lightgrey;
     display: inline-flex;
     -webkit-order: 0;
     -ms-flex-order: 0;
@@ -120,10 +119,21 @@ nav {
     -ms-flex-item-align: auto;
     align-self: auto;
     padding: 20px;
-    margin: 20px;
+    border-radius: 5px;
 
     h3 {
+    }
+
+    p {
       display: block;
     }
+  }
+
+  .box:first-child {
+    margin-right: 20px;
+  }
+
+  .box:last-child {
+    margin-left: 20px;
   }
 }
