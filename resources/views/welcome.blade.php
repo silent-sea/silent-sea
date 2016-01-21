@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="row">
-        <div class="columns hero-image"><div class="h-image">test</div></div>
+        <div class="hero"></div>
     </div>
 
     <div class="row latest-items">

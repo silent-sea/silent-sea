@@ -15,7 +15,9 @@ $test: red;
 
 html, body {
   background-color: $background-color;
-  font-family: $font;
+  font-family: "Merriweather", serif;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .right {
@@ -26,44 +28,23 @@ html, body {
   float: left;
 }
 
-.tc {
-  text-align: center;
-}
-
 .logo {
-  margin-top: 50px;
+  margin-top: 80px;
+  margin-bottom: 80px;
 
-  p {
-    font-size: 50pt;
-    text-align: center;
-    margin-top: 35px;
-  }
-}
-
-.topnav {
-  font-weight: bold;
-  margin-top: 50px;
-
-  div a {
+  h1 {
+    font: 700 90px/1 "Dancing Script", cursive;
+    display: block;
+    margin: auto;
     color: $main-black;
   }
-
-  div a:hover {
-    padding: 5px 10px 5px 10px;
-    border: 3px solid $main-black;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-  }
 }
 
-.hero-image {
-  margin-top: 50px;
-
-  .h-image {
-    background-color: lightgrey;
-    height: 300px;
-  }
+.hero {
+  background: url('http://www.95wowgold.com/images/exceptional-shine-wedding-invitations-5-wedding-invitation-1200-x-900.jpg') 50%;
+  width: 1200px;
+  height: 300px;
+  margin-bottom: 400px;
 }
 
 .footer {
@@ -74,27 +55,30 @@ html, body {
   font-size: 9.5pt;
 }
 
-.circle_logo {
-  background-color: $logo-color;
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
-}
+nav {
+  width: 1200px;
+  margin: 0 auto 30px auto;
 
-.latest-items {
-  margin-top: 30px;
-}
-
-.items {
-  margin-top: 10px;
-
-  .large-3 {
-    padding: 0px;
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin:0;
+    color: $main-black;
   }
-}
 
-.test-item {
-  background-color: red;
-  width: 270px;
-  height: 270px;
+  a {
+    color: $main-black;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  a:hover {
+    color: $main-black;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: 3px solid $main-black;
+    padding: 5px 10px 5px 10px;
+  }
 }

@@ -3691,7 +3691,9 @@ table.hover tr:nth-of-type(even):hover {
 
 html, body {
   background-color: #FDFDFD;
-  font-family: "Lato", sans-serif; }
+  font-family: "Merriweather", serif;
+  font-size: 16px;
+  line-height: 1.5; }
 
 .right {
   float: right; }
@@ -3699,31 +3701,20 @@ html, body {
 .left {
   float: left; }
 
-.tc {
-  text-align: center; }
-
 .logo {
-  margin-top: 50px; }
-  .logo p {
-    font-size: 50pt;
-    text-align: center;
-    margin-top: 35px; }
-
-.topnav {
-  font-weight: bold;
-  margin-top: 50px; }
-  .topnav div a {
+  margin-top: 80px;
+  margin-bottom: 80px; }
+  .logo h1 {
+    font: 700 90px/1 "Dancing Script", cursive;
+    display: block;
+    margin: auto;
     color: #151414; }
-  .topnav div a:hover {
-    padding: 5px 10px 5px 10px;
-    border: 3px solid #151414;
-    border-radius: 3px; }
 
-.hero-image {
-  margin-top: 50px; }
-  .hero-image .h-image {
-    background-color: lightgrey;
-    height: 300px; }
+.hero {
+  background: url("http://www.95wowgold.com/images/exceptional-shine-wedding-invitations-5-wedding-invitation-1200-x-900.jpg") 50%;
+  width: 1200px;
+  height: 300px;
+  margin-bottom: 400px; }
 
 .footer {
   margin-top: 30px;
@@ -3732,23 +3723,27 @@ html, body {
   padding-top: 10px;
   font-size: 9.5pt; }
 
-.circle_logo {
-  background-color: red;
-  border-radius: 50%;
-  width: 200px;
-  height: 200px; }
-
-.latest-items {
-  margin-top: 30px; }
-
-.items {
-  margin-top: 10px; }
-  .items .large-3 {
-    padding: 0px; }
-
-.test-item {
-  background-color: red;
-  width: 270px;
-  height: 270px; }
+nav {
+  width: 1200px;
+  margin: 0 auto 30px auto; }
+  nav ul {
+    list-style: none;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    color: #151414; }
+  nav a {
+    color: #151414;
+    font-family: "Montserrat", sans-serif; }
+  nav a:hover {
+    color: #151414;
+    border-radius: 3px;
+    border: 3px solid #151414;
+    padding: 5px 10px 5px 10px; }
 
 /*# sourceMappingURL=app.css.map */

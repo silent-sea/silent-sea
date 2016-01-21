@@ -1,26 +1,33 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link href='//fonts.googleapis.com/css?family=Merriweather|Montserrat:400,700|Dancing+Script:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
     <title>Frog and Veil</title>
+
     {!! Html::style('css/app.css') !!}
 </head>
 
 <body>
     <div class="container">
-        <div class="row logo">
-            <div class="large-2 columns"><div class="circle_logo"></div></div>
-            <div class="large-10 columns"><p>Frog and Veil</p></div>
+        <div class="row columns logo">
+            <h1>Frog and Veil</h1>
         </div>
 
-        <div class="row topnav">
-            <div class="columns tc"><a href="#">HOME</a></div>
-            <div class="columns tc"><a href="#">COLLECTIONS</a></div>
-            <div class="columns tc"><a href="#">DETAILS & PRICES</a></div>
-            <div class="columns tc"><a href="#">ABOUT</a></div>
-            <div class="columns tc"><a href="#">BLOG</a></div>
-            <div class="columns tc"><a href="#">CONTACT</a></div>
-        </div>
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">COLLECTIONS</a></li>
+                <li><a href="#">DETAILS & PRICES</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
     </div>
 
     <div class="container">
