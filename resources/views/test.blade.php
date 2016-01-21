@@ -177,7 +177,10 @@
     }
 
 </style>
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link href='//fonts.googleapis.com/css?family=Merriweather|Montserrat:400,700|Dancing+Script:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <section class="hero">
     <h1><span>logo test</span>test</h1>
     <h2>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor.</h2>
