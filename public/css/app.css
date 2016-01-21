@@ -3695,6 +3695,14 @@ html, body {
   font-size: 16px;
   line-height: 1.5; }
 
+h3,
+a:hover,
+a:visited,
+a:active,
+a {
+  text-decoration: none;
+  color: #3b3b58; }
+
 .right {
   float: right; }
 
@@ -3742,8 +3750,8 @@ nav {
     border-radius: 3px;
     border: 3px solid #ff4e5c;
     padding: 5px 10px 5px 10px;
-    -webkit-animation: shake .5s ease-in-out;
-    animation: shake .5s ease-in-out; }
+    -webkit-animation: shake .6s ease-in-out;
+    animation: shake .6s ease-in-out; }
 
 @-webkit-keyframes shake {
   0% {
@@ -3838,8 +3846,8 @@ nav {
   padding: 5px 10px 5px 10px;
   border: 3px solid #ff4e5c;
   border-radius: 3px;
-  -webkit-animation: shake .5s ease-in-out;
-  animation: shake .5s ease-in-out; }
+  -webkit-animation: shake .6s ease-in-out;
+  animation: shake .6s ease-in-out; }
 
 .section {
   width: 800px;
