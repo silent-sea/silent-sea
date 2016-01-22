@@ -3751,7 +3751,7 @@ nav {
     border: 3px solid #ff4e5c;
     padding: 5px 10px 5px 10px;
     -webkit-animation: shake .6s ease-in-out;
-    animation: shake .6s ease-in-out; }
+    //animation: shake .6s ease-in-out; }
 
 @-webkit-keyframes shake {
   0% {
