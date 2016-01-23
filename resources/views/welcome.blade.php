@@ -2,6 +2,8 @@
 
 @section('content')
 
+    @include('layouts.nav')
+
     @include('layouts.welcomehero')
 
     <div class="row section">
@@ -25,4 +27,8 @@
                     <p>Duis neque leo cursus ac libero ac imperdiet bibendum nisl mauris neque diam vulputate nem.</p><span class="box__more">Read more</span></a></article>
         </div>
     </div>
+
+    @include('layouts.footer')
+
 @endsection
+

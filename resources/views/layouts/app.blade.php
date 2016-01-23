@@ -19,49 +19,11 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="row columns logo">
-            <h1>Frog and Veil</h1>
-        </div>
-
-        <nav>
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">COLLECTIONS</a></li>
-                <li><a href="#">DETAILS & PRICES</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">BLOG</a></li>
-                <li><a href="#">CONTACT</a></li>
-            </ul>
-        </nav>
-    </div>
 
     <div class="container">
         @yield('content')
     </div>
 
-    <div class="container">
-        <div class="row footer">
-                <div class="left">Copyright &copy; Frog and Veil 2016</div>
-        </div>
-    </div>
-
-    <script>
-        $(document).ready(function() {
-
-            $("#owl").owlCarousel({
-
-                navigation : false,
-                slideSpeed : 200,
-                paginationSpeed : 400,
-                singleItem:true,
-                autoPlay: true,
-                pagination: false
-
-            });
-
-        });
-    </script>
 </body>
 
 </html>

@@ -12,7 +12,12 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+
+    $year = Carbon\Carbon::now();
+    $year = $year->year;
+
+    return view('welcome')
+        ->with('year', $year);
 });
 
 /*

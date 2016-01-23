@@ -8,6 +8,10 @@ $main-black: #3b3b58;
 $main-orange: #ff4e5c;
 $logo-color: red;
 
+$font-logo: 700 90px/1 "Dancing Script", cursive;
+$font-title: "Montserrat", sans-serif;
+$font-normal: "Merriweather", serif;
+
 $test: red;
 
 .test {
@@ -51,12 +55,11 @@ a {
 }
 
 .footer {
-  font-family: "Montserrat", sans-serif;
   margin-top: 50px;
   margin-bottom: 20px;
   border-top: 3px solid $main-black;
   padding-top: 10px;
-  font-size: 8pt;
+  font-size: 9pt;
 }
 
 nav {
@@ -80,13 +83,12 @@ nav {
   }
 
   a:hover {
-    color: $main-orange;
+    color: $main-black;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
-    border: 3px solid $main-orange;
+    border: 3px solid $main-black;
     padding: 5px 10px 5px 10px;
-    animation: shake .6s ease-in-out;
   }
 }
 
@@ -181,7 +183,6 @@ nav {
   padding: 5px 10px 5px 10px;
   border: 3px solid $main-orange;
   border-radius: 3px;
-  animation: shake .6s ease-in-out;
 }
 
 .section {
@@ -202,3 +203,34 @@ nav {
   text-align: center;
   margin: 0 5% 0;
 }
+
+.login-box {
+  margin: 0 auto 0 auto;
+  padding: 50px;
+  background: #f5f5f5;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  font-family: $font-normal;
+
+  label {
+    font-family: $font-title;
+  }
+
+  button {
+    font-family: $font-title;
+    padding: 10px 10px 10px 10px;
+    border: 3px solid $main-black;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  button:hover {
+    background: $main-black;
+    color: white;
+  }
+}
+
