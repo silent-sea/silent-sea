@@ -39,4 +39,6 @@ Route::group(['middleware' => 'web'], function () {
     Route::auth();
 
     Route::get('/admin', 'HomeController@index');
+
+    Route::post('/admin/create/owl', 'AdminController@createOwl');
 });
