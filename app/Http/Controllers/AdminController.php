@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Owl;
 use App\Http\Requests;
 use Session;
+use File;
 
 class AdminController extends Controller
 {
@@ -39,7 +40,15 @@ class AdminController extends Controller
 
     public function deleteOwl(Requests\CreateOwlRequest $request)
     {
+        $id = $request->owlsid;
+        $owl = Owl::find($id);
 
+        $filename = 'upload/hero/' . $owl->url;
+        File::delete($filename);
+
+        $owl->delete();
+
+        return redirect('admin');
     }
 
     public function activeOwl(Requests\CreateOwlRequest $request)
