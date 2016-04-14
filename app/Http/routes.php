@@ -13,16 +13,11 @@ Route::get('/', function () {
         ->with('owl', $owl);
 });
 
-
-
-Route::group(['middleware' => ['web']], function () {
-    //
-});
-
 Route::group(['middleware' => 'web'], function () {
     Route::auth();
 
     Route::get('/admin', 'HomeController@index');
+    Route::get('/admin/news', 'HomeController@news');
 
     Route::post('/admin/create/owl', 'AdminController@createOwl');
     Route::post('/admin/delete/owl', 'AdminController@deleteOwl');

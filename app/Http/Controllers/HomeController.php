@@ -29,4 +29,9 @@ class HomeController extends Controller
         return view('admin')
             ->with('owl', $owl);
     }
+
+    public function news()
+    {
+        return view('news');
+    }
 }
