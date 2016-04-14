@@ -25,9 +25,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $owl = Owl::all();
-        return view('admin')
-            ->with('owl', $owl);
+
     }
 
     public function news()

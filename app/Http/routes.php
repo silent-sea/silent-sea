@@ -13,14 +13,17 @@ Route::get('/', function () {
         ->with('owl', $owl);
 });
 
+Route::get('/news/{id}', 'NewsController@show');
+
 Route::group(['middleware' => 'web'], function () {
     Route::auth();
 
-    Route::get('/admin', 'HomeController@index');
-    Route::get('/admin/news', 'HomeController@news');
+    Route::get('/admin', 'AdminController@index');
+    Route::get('/admin/news', 'NewsController@index');
 
     Route::post('/admin/create/owl', 'AdminController@createOwl');
     Route::post('/admin/delete/owl', 'AdminController@deleteOwl');
     Route::post('/admin/active/owl', 'AdminController@activeOwl');
+    Route::post('/admin/create/news', 'NewsController@create');
     //test
 });

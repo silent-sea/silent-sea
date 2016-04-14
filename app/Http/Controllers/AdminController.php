@@ -9,6 +9,12 @@ use File;
 
 class AdminController extends Controller
 {
+    public function index()
+    {
+        $owl = Owl::all();
+        return view('admin')
+            ->with('owl', $owl);
+    }
     public function createOwl(Requests\CreateOwlRequest $request)
     {
         $characters = 'abcdefghijklmnopqrstuvwxyz0123456789';
