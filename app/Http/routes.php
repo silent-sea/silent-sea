@@ -1,35 +1,19 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Routes File
-|--------------------------------------------------------------------------
-|
-| Here is where you will register all of the routes in an application.
-| It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the controller to call when that URI is requested.
-|
-*/
+use App\Owl;
 
 Route::get('/', function () {
 
     $year = Carbon\Carbon::now();
     $year = $year->year;
+    $owl = Owl::all()->where('active', 1);
 
     return view('welcome')
-        ->with('year', $year);
+        ->with('year', $year)
+        ->with('owl', $owl);
 });
 
-/*
-|--------------------------------------------------------------------------
-| Application Routes
-|--------------------------------------------------------------------------
-|
-| This route group applies the "web" middleware group to every route
-| it contains. The "web" middleware group is defined in your HTTP
-| kernel and includes session state, CSRF protection, and more.
-|
-*/
+
 
 Route::group(['middleware' => ['web']], function () {
     //
@@ -41,4 +25,6 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('/admin', 'HomeController@index');
 
     Route::post('/admin/create/owl', 'AdminController@createOwl');
+    Route::post('/admin/delete/owl', 'AdminController@deleteOwl');
+    Route::post('/admin/active/owl', 'AdminController@activeOwl');
 });

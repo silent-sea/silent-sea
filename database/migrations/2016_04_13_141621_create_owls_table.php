@@ -16,6 +16,7 @@ class CreateOwlsTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('url');
+            $table->integer('active')->default(0);
             $table->timestamps();
         });
     }

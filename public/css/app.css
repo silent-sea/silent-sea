@@ -3879,4 +3879,8 @@ nav {
     background: #3b3b58;
     color: white; }
 
+.callout {
+  border-radius: 4px;
+  background: #fafafa; }
+
 /*# sourceMappingURL=app.css.map */

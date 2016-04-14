@@ -24,7 +24,7 @@ class CreateOwlRequest extends Request
     public function rules()
     {
         return [
-            //
+
         ];
     }
 }

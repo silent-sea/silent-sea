@@ -2,48 +2,66 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Input;
+use App\Owl;
 use App\Http\Requests;
-use Symfony\Component\HttpFoundation\File\UploadedFile;
-use Validator;
-use Illuminate\Support\Facades\Redirect;
 use Session;
 
 class AdminController extends Controller
 {
-    public function index() {
+    public function createOwl(Requests\CreateOwlRequest $request)
+    {
+        $characters = 'abcdefghijklmnopqrstuvwxyz0123456789';
+        $string = '';
+        $random_string_length = 12;
+        $name = $request->name;
+
+        for ($i = 0; $i < $random_string_length; $i++) {
+            $string .= $characters[rand(0, strlen($characters) - 1)];
+        }
+
+        $imageName = $name . '_' . $string . '.' .
+            $request->file('image')->getClientOriginalExtension();
+
+        $owl = new Owl;
+
+        $owl->name = $name;
+        $owl->url = $imageName;
+
+        $owl->save();
+
+        $request->file('image')->move(
+            base_path() . '/public/upload/hero/', $imageName
+        );
+
+        Session::flash('success', 'Upload Successful. ');
+        return redirect('admin');
+    }
+
+    public function deleteOwl(Requests\CreateOwlRequest $request)
+    {
 
     }
 
-    public function createOwl(Requests\CreateOwlRequest $request) {
-        // getting all of the post data
-        $file = array('image' => Input::file('image'));
-        // setting up rules
-        $rules = array('image' => 'required',); //mimes:jpeg,bmp,png and for max size max:10000
-        // doing the validation, passing post data, rules and the messages
-        $validator = Validator::make($file, $rules);
-        if ($validator->fails()) {
-            // send back to the page with the input data and errors
-            return redirect('admin')->withInput()->withErrors($validator);
+    public function activeOwl(Requests\CreateOwlRequest $request)
+    {
+        $id = $request->owlsid;
+        $owl = Owl::find($id);
+
+        if($owl->active === 0)
+        {
+            $owl->active = 1;
+
+        }
+        else if ($owl->active === 1)
+        {
+            $owl->active = 0;
         }
         else {
-            // checking file is valid.
-            if (Input::file('image')->isValid()) {
-                $destinationPath = '/public/upload/hero'; // upload path
-                $extension = Input::file('image')->getClientOriginalExtension(); // getting image extension
-                $fileName = rand(11111,99999).'.'.$extension; // renameing image
-                Input::file('image')->move($destinationPath, $fileName); // uploading file to given path
-                // sending back with message
-                Session::flash('success', 'Upload successfully');
-                return redirect('admin');
-            }
-            else {
-                // sending back with error message.
-                Session::flash('error', 'uploaded file is not valid');
-                return redirect('admin');
-
-            }
+            print 'error toggling owl';
         }
+
+        $owl->save();
+
+        return redirect('admin');
     }
 }
