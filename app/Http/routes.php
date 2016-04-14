@@ -27,4 +27,5 @@ Route::group(['middleware' => 'web'], function () {
     Route::post('/admin/create/owl', 'AdminController@createOwl');
     Route::post('/admin/delete/owl', 'AdminController@deleteOwl');
     Route::post('/admin/active/owl', 'AdminController@activeOwl');
+    //test
 });
