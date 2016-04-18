@@ -16,6 +16,10 @@
     {!! Html::script('js/jquery-1.9.1.min.js') !!}
     {!! Html::script('js/owl.carousel.js') !!}
 
+    <!--[if lt IE 10]>
+    {!! Html::script('js/html5shiv.js') !!}
+    <![endif]-->
+
 </head>
 
 <body>

@@ -5,7 +5,7 @@
 
     <nav>
         <ul>
-            <li><a href="/admin">ADMIN HOME</a></li>
+            <li><a href="/admin">HEROS</a></li>
             <li><a href="/admin/news">NEWS</a></li>
             <li><a href="#">TEST</a></li>
             <li><a href="#">TEST</a></li>

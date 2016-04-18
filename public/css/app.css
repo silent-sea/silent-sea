@@ -3845,7 +3845,6 @@ nav {
   border-radius: 3px; }
 
 .section {
-  width: 800px;
   margin-bottom: 50px; }
 
 .section__title {
@@ -3853,6 +3852,7 @@ nav {
   color: #3b3b58;
   font-family: "Montserrat", sans-serif;
   margin: 0 auto 15px auto;
+  text-align: center;
   font-weight: bold; }
 
 .section__intro {

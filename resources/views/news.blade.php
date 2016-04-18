@@ -14,7 +14,7 @@
                 <input type="input" id="shortdsc" name="shortdesc">
 
                 <label name="fullcontent">Content:</label>
-                <input type="textbox" id="fullcontent" name="fullcontent">
+                <textarea id="fullcontent" name="fullcontent"></textarea>
 
                 {{ Form::submit('Post', ['class' => 'small hollow success button']) }}
             {!! Form::close() !!}

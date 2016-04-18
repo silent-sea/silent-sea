@@ -1,16 +1,19 @@
 <?php
 
 use App\Owl;
+use App\News;
 
 Route::get('/', function () {
 
     $year = Carbon\Carbon::now();
     $year = $year->year;
     $owl = Owl::all()->where('active', 1);
+    $news = News::all();
 
     return view('welcome')
         ->with('year', $year)
-        ->with('owl', $owl);
+        ->with('owl', $owl)
+        ->with('news', $news);
 });
 
 Route::get('/news/{id}', 'NewsController@show');
@@ -25,5 +28,4 @@ Route::group(['middleware' => 'web'], function () {
     Route::post('/admin/delete/owl', 'AdminController@deleteOwl');
     Route::post('/admin/active/owl', 'AdminController@activeOwl');
     Route::post('/admin/create/news', 'NewsController@create');
-    //test
 });

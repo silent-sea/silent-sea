@@ -7,10 +7,19 @@
     @include('layouts.welcomehero')
 
     <div class="row section">
-        <h2 class="section__title">SOME TITLE</h2>
-        <p class="section__intro">
-            Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor.
-        </p>
+        <div class="small-6 columns">
+            <h2 class="section__title">SOME TITLE</h2>
+            <p class="section__intro">
+                Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor.
+            </p>
+        </div>
+
+        <div class="small-6 columns">
+            <h2 class="section__title">SOME TITLE</h2>
+            <p class="section__intro">
+                Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor.
+            </p>
+        </div>
     </div>
 
     <div class="row">

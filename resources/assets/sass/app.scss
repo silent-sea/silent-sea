@@ -186,7 +186,6 @@ nav {
 }
 
 .section {
-  width: 800px;
   margin-bottom: 50px;
 }
 
@@ -196,6 +195,7 @@ nav {
   color: $main-black;
   font-family: "Montserrat", sans-serif;
   margin: 0 auto 15px auto;
+  text-align: center;
   font-weight: bold;
 }
 .section__intro {
