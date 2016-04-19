@@ -6,6 +6,9 @@
 
     <div class="container">
         <div class="row">
+            <p><strong>Dont create another if there are already 3, layout un-tested</strong></p>
+        </div>
+        <div class="row">
             {!! Form::open(array('action' => 'TripletController@create')) !!}
             <label name="title">Title:</label>
             <input type="input" id="title" name="title">
