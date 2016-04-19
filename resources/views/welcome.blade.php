@@ -15,7 +15,7 @@
         </div>
 
         <div class="small-6 columns">
-            <h2 class="section__title">{{ $latestnews->title }}</h2>
+            <h2 class="section__title">{{ strtoupper($latestnews->title) }}</h2>
             <p class="section__intro">
                 {{ $latestnews->shortdesc }}
             </p>
