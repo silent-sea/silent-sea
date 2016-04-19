@@ -3844,6 +3844,9 @@ nav {
   border: 3px solid #ff4e5c;
   border-radius: 3px; }
 
+.box__content:hover .bulb {
+  color: #ff4e5c; }
+
 .section {
   margin-bottom: 50px; }
 
@@ -3857,8 +3860,7 @@ nav {
 
 .section__intro {
   display: block;
-  text-align: center;
-  margin: 0 5% 0; }
+  text-align: center; }
 
 .login-box {
   margin: 0 auto 0 auto;
