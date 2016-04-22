@@ -8,7 +8,7 @@
             <li><a href="/admin">HEROS</a></li>
             <li><a href="/admin/news">NEWS</a></li>
             <li><a href="/admin/triplets">TRIPLETS</a></li>
-            <li><a href="#">TEST</a></li>
+            <li><a href="/admin/catalogue">CATALOGUE</a></li>
             <li><a href="#">TEST</a></li>
             <li><a href="#">TEST</a></li>
         </ul>

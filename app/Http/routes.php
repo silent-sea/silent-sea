@@ -29,6 +29,7 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('/admin', 'AdminController@index');
     Route::get('/admin/news', 'NewsController@index');
     Route::get('/admin/triplets', 'TripletController@index');
+    Route::get('/admin/catalogue', 'ItemsController@index');
 
     Route::post('/admin/create/owl', 'AdminController@createOwl');
     Route::post('/admin/delete/owl', 'AdminController@deleteOwl');
@@ -38,4 +39,7 @@ Route::group(['middleware' => 'web'], function () {
 
     Route::post('/admin/create/triplet', 'TripletController@create');
     Route::post('/admin/update/triplet', 'TripletController@update');
+
+    Route::post('/admin/create/item/group', 'ItemGroupController@create');
+    Route::post('/admin/create/item', 'ItemsController@create');
 });

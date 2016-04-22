@@ -3885,4 +3885,11 @@ nav {
   border-radius: 4px;
   background: #fafafa; }
 
+.btnmrg {
+  margin-top: 25px;
+  padding-bottom: 11px; }
+
+.panel-blue {
+  background: #bee5ff; }
+
 /*# sourceMappingURL=app.css.map */
