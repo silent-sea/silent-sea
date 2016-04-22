@@ -6,17 +6,13 @@
 
 <script>
     $(document).ready(function() {
-
         $("#owl").owlCarousel({
-
             navigation : false,
             slideSpeed : 200,
             paginationSpeed : 400,
             singleItem:true,
             autoPlay: true,
             pagination: false
-
         });
-
     });
 </script>

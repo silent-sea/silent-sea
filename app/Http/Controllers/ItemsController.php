@@ -39,16 +39,14 @@ class ItemsController extends Controller
         $imageName = $name . '_' . $string . '.' .
             $request->file($id . 'image')->getClientOriginalExtension();
 
-        print $request->file($id . 'image');
-
         $item = new Item();
 
-        $item->name = $name;
-        $item->shortdesc = $shortdesc;
-        $item->desc = $desc;
-        $item->image = $imageName;
-        $item->group_id = $id;
-        $item->price = $price;
+        $item->name         = $name;
+        $item->shortdesc    = $shortdesc;
+        $item->desc         = $desc;
+        $item->image        = $imageName;
+        $item->group_id     = $id;
+        $item->price        = $price;
 
         $item->save();
 
