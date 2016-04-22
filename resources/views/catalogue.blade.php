@@ -109,8 +109,6 @@
                                 <td>{{ $item->desc }}</td>
                                 <td>{{ $item->price }}</td>
                             </tr>
-                            @else
-                                No items.
                             @endif
                         @endforeach
                     </tbody>
