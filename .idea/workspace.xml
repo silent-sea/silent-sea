@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf51eee7-04dd-49d1-8b04-7db4d123d402" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/catalogue.blade.php" afterPath="$PROJECT_DIR$/resources/views/catalogue.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/NewsController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/NewsController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/news.blade.php" afterPath="$PROJECT_DIR$/resources/views/news.blade.php" />
     </list>
     <ignored path="silent-sea.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,8 +48,18 @@
       <file leaf-file-name="NewsController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/NewsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.461538">
-              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state vertical-scroll-proportion="-8.5">
+              <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="news.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/news.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.70193547">
+              <caret line="32" column="18" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -88,11 +99,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="catalogue.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="catalogue.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/catalogue.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.75870967">
-              <caret line="110" column="33" selection-start-line="110" selection-start-column="33" selection-end-line="110" selection-end-column="33" />
+            <state vertical-scroll-proportion="-9.538462">
+              <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="54" selection-end-column="14" />
               <folding>
                 <element signature="e#1552#1579#0#HTML" expanded="true" />
               </folding>
@@ -152,11 +163,9 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" />
         <option value="$PROJECT_DIR$/app/Http/Requests/CreateNewsRequest.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/NewsController.php" />
         <option value="$PROJECT_DIR$/resources/assets/js/html5shiv.js" />
         <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/resources/views/news.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2016_04_14_135318_create_news_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2016_04_19_095839_update_news_table.php" />
         <option value="$PROJECT_DIR$/resources/views/shownews.blade.php" />
@@ -179,6 +188,8 @@
         <option value="$PROJECT_DIR$/resources/assets/sass/app.scss" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ItemsController.php" />
         <option value="$PROJECT_DIR$/resources/views/catalogue.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/NewsController.php" />
+        <option value="$PROJECT_DIR$/resources/views/news.blade.php" />
       </list>
     </option>
   </component>
@@ -878,14 +889,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/news.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4187192">
-          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.769231">
@@ -1008,14 +1011,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/NewsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.461538">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Requests/ItemGroupRequest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.807693">
@@ -1088,11 +1083,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/catalogue.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.75870967">
-          <caret line="110" column="33" selection-start-line="110" selection-start-column="33" selection-end-line="110" selection-end-column="33" />
+        <state vertical-scroll-proportion="-9.538462">
+          <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="54" selection-end-column="14" />
           <folding>
             <element signature="e#1552#1579#0#HTML" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/NewsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.5">
+          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/news.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.70193547">
+          <caret line="32" column="18" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -19,5 +19,18 @@
                 {{ Form::submit('Post', ['class' => 'small hollow success button']) }}
             {!! Form::close() !!}
         </div>
+
+        @foreach($news as $new)
+            <div class="row">
+                <div class="medium-12 colums">
+                    <div class="panel callout radius">
+                        {{ $new->title }}
+                        <div class="right">
+                            Delete
+                        </div>
+                    </div>
+                </div>
+            </div>
+        @endforeach
     </div>
 @endsection

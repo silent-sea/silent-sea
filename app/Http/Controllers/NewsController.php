@@ -10,7 +10,10 @@ class NewsController extends Controller
 {
     public function index()
     {
-        return view('news');
+        $news = News::all();
+
+        return view('news')
+            ->with('news', $news);
     }
 
     public function show($id)
