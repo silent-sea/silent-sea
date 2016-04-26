@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\News;
 use Illuminate\Http\Request;
 use App\Http\Requests;
+use Carbon\Carbon;
 
 class NewsController extends Controller
 {
@@ -19,9 +20,12 @@ class NewsController extends Controller
     public function show($id)
     {
         $article = News::find($id);
+        $year = Carbon::now();
+        $year = $year->year;
 
         return view('shownews')
-            ->with('article', $article);
+            ->with('article', $article)
+            ->with('year', $year);
     }
 
     public function create(Requests\CreateNewsRequest $request)

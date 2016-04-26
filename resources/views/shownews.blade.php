@@ -6,10 +6,19 @@
 
     <div class="container">
         <div class="row">
-            <h1>{{ $article->title }}</h1>
-            <h3>{{ $article->shortdesc }}</h3>
-            <p>{{ $article->content }}</p>
-            {{  nl2br(htmlentities($article->content, ENT_QUOTES, 'UTF-8')) }}
+            <div class="medium-12 columns">
+                <h1>{{ $article->title }}</h1>
+            </div>
+
+            <div class="medium-12 columns">
+                <h3>{{ $article->shortdesc }}</h3>
+            </div>
+
+            <div class="medium-12 columns">
+                <p>{{ $article->content }}</p>
+            </div>
         </div>
     </div>
+
+    @include('layouts.footer')
 @endsection
