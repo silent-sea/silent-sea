@@ -7,6 +7,7 @@ $font: 'Lato', sans-serif;;
 $main-black: #3b3b58;
 $main-orange: #ff4e5c;
 $logo-color: red;
+$off-black: #6d6da7;
 
 $font-logo: 700 90px/1 "Dancing Script", cursive;
 $font-title: "Montserrat", sans-serif;
@@ -238,16 +239,96 @@ nav {
   }
 }
 
-.callout {
-  border-radius: 4px;
-  background: #fafafa;
-}
-
 .btnmrg {
   margin-top: 25px;
-  padding-bottom: 11px;
+  padding-bottom: 10px;
+  margin-right: 10px;
 }
 
 .panel-blue {
   background: #bee5ff;
+}
+
+.mrg-right {
+  margin-right: 10px;
+}
+
+.mrg-left {
+  margin-left: 10px;
+}
+
+.callout {
+  border: 2px solid $main-black;
+  background: none;
+  border-radius: 3px;
+}
+
+.callout textarea,
+.callout input:focus,
+.callout input {
+  border: 2px solid $main-black;
+  color: $main-black;
+}
+
+.button.hollow {
+  border: 2px solid $main-black;
+  color: $main-black;
+}
+
+.button.hollow.success {
+  border: 2px solid $main-black;
+  color: $main-black;
+}
+
+.button.hollow.alert {
+  border: 2px solid $main-black;
+  color: $main-black;
+}
+
+.button.hollow.alert:hover,
+.button.hollow.alert:focus,
+.button.hollow.success:hover,
+.button.hollow.success:focus,
+.button.hollow:hover,
+.button.hollow:focus {
+  border: 2px solid $main-black;
+  background: $main-black;
+  color: white;
+}
+
+::-webkit-input-placeholder {
+  color: #757797;
+}
+
+:-moz-placeholder {
+  color: #757797;
+}
+
+::-moz-placeholder {
+  color: #757797;
+}
+
+:-ms-input-placeholder {
+  color: #757797;
+}
+
+.news-create textarea {
+  height: 200px;
+}
+
+.news-create input {
+  width: 100%;
+}
+
+.news-item {
+  background: $main-black;
+  color: white;
+}
+
+.news-shortdesc {
+  color: $off-black;
+}
+
+.over-h {
+  overflow: hidden;
 }
